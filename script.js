@@ -106,7 +106,7 @@ $(document).ready(function(event) {
         if(textInput.length > firstWord.length)
             {
 
-                if(e.code !== "Space" || !textInput[textInput - 1] === ' ')
+                if(e.code !== "Space" && !textInput[textInput - 1] === ' ')
                     $("#firstWord").html(`<span class="notMatching">${firstWord}</span>`);
                 else
                         if(identicalStrings(textInput, firstWord) && firstWord.length > 0)
