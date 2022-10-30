@@ -191,7 +191,7 @@ function countdown(duration){
         var x = setInterval(function() {
         duration--;
         var sec_format;;
-        if(duration < 9)
+        if(duration <= 9)
             sec_format = '0' + duration;
         else 
             sec_format = duration;
