@@ -359,6 +359,6 @@ a{
     }
 
     #OSLeft img{
-        max-width: 0.5rem;
+        min-width: 0.5rem;
     }
 }
