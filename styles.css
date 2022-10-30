@@ -149,6 +149,10 @@ main{
     max-width: 3rem;
     transform-origin: center;
     transition: all 0.25s linear;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
 }
 
 .text-input .restart-input img:hover{
