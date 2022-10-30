@@ -10,7 +10,7 @@ $(document).ready(function(event) {
 , "What Is Love? I have met in the streets a very poor young man who was in love. His hat was old, his coat worn, the water passed through his shoes and the stars through his soul."
 , "Love is like a tree: it grows by itself, roots itself deeply in our being and continues to flourish over a heart in ruin. The inexplicable fact is that the blinder it is, the more tenacious it is. It is never stronger than when it is completely unreasonable."
 ,  "It is a far, far better thing that I do, than I have ever done; it is a far, far better rest I go to than I have ever known."
-, "You have brains in your head. You have feet in your shoes. You can steer yourself any direction you choose. You are on your own. And you know what you know. And YOU are the one who’ll decide where to go…"
+, "You have brains in your head. You have feet in your shoes. You can steer yourself any direction you choose. You are on your own. And you know what you know. And YOU are the one who’ll decide where to go."
 , "All the girls in the world were divided into two classes: one class included all the girls in the world except her, and they had all the usual human feelings and were very ordinary girls; while the other class -herself alone- had no weaknesses and was superior to all humanity."
 , "I never could have done what I have done, without the habits of punctuality, order, and diligence, without the determination to concentrate myself on one object at a time."
 , "At the temple there is a poem called \"Loss\" carved into the stone. It has three words, but the poet has scratched them out. You cannot read loss, only feel it."
