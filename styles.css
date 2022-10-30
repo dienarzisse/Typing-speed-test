@@ -316,6 +316,10 @@ a{
         margin-right: 0;
     }
 
+    .text-input .timer:hover{
+        font-size: 1.5rem;
+    }
+
     .keyboard{
         max-width: 95vw;
     }
