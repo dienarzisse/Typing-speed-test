@@ -145,6 +145,7 @@ $(document).ready(function(event) {
     // events on keydown
     $("#text-input").keydown((e) => {
         keyboardAnimation(e);
+        if ((e.key).match(/[a-z]/i) && (e.key).length === 1)
         countdown(60);
     });
 
