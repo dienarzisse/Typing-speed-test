@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+
+:root{
+ --light-green: rgba(0, 255, 119, 0.75);
+ --dark-blue: rgb(36, 63, 87);
+ --very-dark-blue: rgb(17, 35, 52);
+ --very-light-blue: rgb(206, 219, 228);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+main{
+    background-color: rgba(0, 22, 43, 0.85);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text{
+    background-color: rgba(22, 45, 66, 0.75);
+    box-shadow: -0.1rem 0.1rem 1rem 0.25rem rgba(5, 5, 5, 0.25);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    min-width: 100%;
+    height: 5rem;
+    margin-bottom: 5rem;
+    padding: 3rem 5rem;
+    font-size: 2rem;
+    border-radius: 1rem;
+}
+
+.text p{
+    margin-right: 3rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    min-width: 100%;
+
+}
+
+
+#firstWord{
+    color:var(--very-light-blue);
+    margin-right: 0.5rem;
+    margin-left: 1rem;
+}
+
+#next-words{
+    margin-right: 1rem;
+    color: rgb(113, 180, 238);
+}
+
+.new-text
+{
+    position:absolute;
+    right: 10%;
+}
+
+.counter{
+    margin: 0 0 3rem 0;
+}
+
+#correct-words{
+    color: var(--light-green);
+}
+
+#seconds{
+    color: #00D7DF;
+}
+
+.count{
+    color: var(--very-light-blue);
+}
+
+/* Input text */
+
+.text-input{
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border: none;
+    position: relative;
+    width: 100%;
+}
+
+.text-input input{
+    width: 20rem;
+    padding: 0.5rem 0 0.5rem 0;
+    border-radius: 1rem;
+    border: none;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+    background-color: #98D9D5;
+    color: var(--very-dark-blue);
+    transition: all 0.25s linear;
+    box-shadow: -0.1rem 0.1rem 1rem 0.25rem rgba(5, 5, 5, 0.15);
+}
+
+.text-input input:focus{
+    padding: 1rem 0 1rem 0;
+    transition: all 0.25s linear;
+    box-shadow: -0.1rem 0.1rem 1rem 0.25rem rgba(194, 250, 247, 0.25)
+    
+}
+
+.text-input input:focus{
+    outline: none;
+}
+
+.text-input .timer {
+    color: var(--very-light-blue);
+    margin: 0 1rem 0 1rem;
+    font-size: 2rem;
+    transition: all 0.5s ease-in-out;
+}
+
+.text-input .timer:hover{
+    font-size: 2.5rem;
+}
+
+.text-input .restart-input{
+    transform-origin: center;
+    height: fit-content;
+    padding: 0;
+}
+
+
+.text-input .restart-input img{
+    max-width: 3rem;
+    transform-origin: center;
+    transition: all 0.25s linear;
+}
+
+.text-input .restart-input img:hover{
+    cursor: pointer;
+    background-color: none;
+    max-width: 3.5rem;
+}
+
+
+.matching{
+    color: green;
+}
+
+.notMatching{
+    color: red;
+}
+
+
+/* Styling the keyboard */
+.keyboard{
+    box-shadow: -0.1rem 0.1rem 1rem 0.5rem rgba(194, 250, 247, 0.25);
+    background-color: rgba(194, 250, 247, 0.75);
+    border-radius: 1rem;
+    padding: 0.5rem;
+}
+
+.keyboard:hover{
+
+    box-shadow: -0.1rem 0.1rem 1rem 0.25rem rgba(194, 250, 247, 0.75);
+    transition-timing-function: ease;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+a{
+    color: var(--light-green);
+    text-decoration: none;
+}
+
+.key{
+    text-decoration: none;
+    text-transform: lowercase;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    background: #005568;
+    margin: 0.25rem;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--light-green);
+    text-shadow: 0 0 0.15rem #253A4F;
+    font-family: 'Roboto Mono', monospace;
+
+
+    /* make keys unselectable */
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+.key:hover{
+    background-color: rgba(127, 255, 212, 0.75);
+    box-shadow: -0.1rem 0.1rem 1rem 0.25rem rgba(45, 155, 228, 0.75);
+    color: var(--very-dark-blue);
+    text-shadow: 0 0 0.15rem var(--very-light-blue);
+}
+
+#CapsLock{
+    padding: 1rem 0.75rem 1rem 0.75rem;
+}
+
+#Space{
+    padding: 1rem 10rem 1rem 10rem;
+}
+
+
+#Enter{
+    padding: 1rem 3rem 1rem 3rem;
+}
+
+.special{
+    text-transform: uppercase;
+    background-color: #003844;
+    font-size: 1.25rem;
+}
+
+
+.keyPressed{
+    background-color: rgba(127, 255, 212, 0.75);
+    box-shadow: -0.1rem 0.1rem 1rem 0.25rem rgba(45, 155, 228, 0.75);
+    color: #253A4F;
+    transition: all 0.35s linear;
+}
+
+.capsOnKeys{
+    text-transform: uppercase;
+    transition: all 1s linear;
+}
+
+.capsOn{
+    box-shadow: -0.1rem 0.1rem 0.75rem 0.5rem rgba(64, 247, 237, 1);
+}
+
+#OSLeft img{
+    max-width: 2rem;
+}

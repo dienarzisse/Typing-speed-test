@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="script.js"></script>
+    <title>Typing Speed Test</title>
+</head>
+<body>
+
+    <main>
+
+        <div class="container">
+
+            <div class="counter">
+                <span class = "count"> <span id="correct-words">0</span> correct words in 
+            <span id="seconds">0</span> seconds</span>
+            </div>
+
+            <div class="text">
+                <p> 
+                    <span id="firstWord"></span> 
+                    <span id="next-words"></span>
+                </p>
+            </div>
+
+            <div class="text-input">
+                <p class="timer">1:00</p>
+                <input  type="text" name="text-input" id="text-input" >
+                <a href="#" class="restart-input"><img id="rotate-img" src="./resources/repeat.svg" aria-hidden="true"></a>
+            </div>
+
+            <div class="keyboard">
+                <div class="row row1">
+                            <a href="#" class="key num" id="Digit1">1</a>
+                            <a href="#" class="key num" id="Digit2">2</a>
+                            <a href="#" class="key num" id="Digit3">3</a>
+                            <a href="#" class="key num" id="Digit4">4</a>
+                            <a href="#" class="key num" id="Digit5">5</a>
+                            <a href="#" class="key num" id="Digit6">6</a>
+                            <a href="#" class="key num" id="Digit7">7</a>
+                            <a href="#" class="key num" id="Digit8">8</a>
+                            <a href="#" class="key num" id="Digit9">9</a>
+                            <a href="#" class="key num" id="Digit0">0</a>
+                            <a href="#" class="key symbol" id="Minus">-</a>
+                            <a href="#" class="key symbol" id="Equal">=</a>
+                            <a href="#" class="key special" id="Backspace"> Backspace </a>
+                </div>
+                <div class="row row2">
+                    <a href="#" class="key special" id="Tab">Tab</a>
+                    <a href="#" class="key letter" id="KeyQ">Q</a>
+                    <a href="#" class="key letter" id="KeyW">W</a>
+                    <a href="#" class="key letter" id="KeyE">E</a>
+                    <a href="#" class="key letter" id="KeyR">R</a>
+                    <a href="#" class="key letter" id="KeyT">T</a>
+                    <a href="#" class="key letter" id="KeyY">Y</a>
+                    <a href="#" class="key letter" id="KeyU">U</a>
+                    <a href="#" class="key letter" id="KeyI">I</a>
+                    <a href="#" class="key letter" id="KeyO">O</a>
+                    <a href="#" class="key letter" id="KeyP">P</a>
+                    <a href="#" class="key symbol" id="BracketLeft">[</a>
+                    <a href="#" class="key symbol" id="BracketRight">]</a>
+                    <a href="#" class="key symbol" id="Backslash">\</a>
+                </div>
+                <div class="row row3">
+                    <a href="#" class="key special" id="CapsLock">Capslk</a>
+                    <a href="#" class="key letter" id="KeyA"><span>A</span></a>
+                    <a href="#" class="key letter" id="KeyS">S</a>
+                    <a href="#" class="key letter" id="KeyD">D</a>
+                    <a href="#" class="key letter" id="KeyF">F</a>
+                    <a href="#" class="key letter" id="KeyG">G</a>
+                    <a href="#" class="key letter" id="KeyH">H</a>
+                    <a href="#" class="key letter" id="KeyJ">J</a>
+                    <a href="#" class="key letter" id="KeyK">K</a>
+                    <a href="#" class="key letter" id="KeyL">L</a>
+                    <a href="#" class="key symbol" id="Semicolon">;</a>
+                    <a href="#" class="key symbol" id="Quote">'</a>
+                    <a href="#" class="key special" id="Enter">Enter</a>
+                </div>
+                <div class="row row4">
+                    <a href="#" class="key special" id="ShiftLeft">Shift</a>
+                    <a href="#" class="key letter" id="KeyZ">Z</a>
+                    <a href="#" class="key letter" id="KeyX">X</a>
+                    <a href="#" class="key letter" id="KeyC">C</a>
+                    <a href="#" class="key letter" id="KeyV">V</a>
+                    <a href="#" class="key letter" id="KeyB">B</a>
+                    <a href="#" class="key letter" id="KeyN">N</a>
+                    <a href="#" class="key letter" id="KeyM">M</a>
+                    <a href="#" class="key symbol" id="Comma">,</a>
+                    <a href="#" class="key symbol" id="Period">.</a>
+                    <a href="#" class="key symbol" id="Slash">/</a>
+                    <a href="#" class="key special" id="ShiftRight">Shift</a>
+                </div>
+                <div class="row row5">
+                    <a href="#" class="key special" id="ControlLeft">CTRL</a>
+                    <a href="#" class="key special" id="OSLeft"><img src="./resources/windows.svg" aria-hidden="true"></a>
+                    <a href="#" class="key special" id="AltLeft">ALT</a>
+                    <a href="#" class="key special space" id="Space">Space</a>
+                    <a href="#" class="key special" id="AltRight">ALT</a>
+                    <a href="#" class="key special" id="ControlRight">CTRL</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+</body>
+</html>
