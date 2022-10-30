@@ -88,6 +88,8 @@ main{
 
 .count{
     color: var(--very-light-blue);
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
 }
 
 /* Input text */
