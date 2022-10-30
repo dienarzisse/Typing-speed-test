@@ -122,12 +122,9 @@ main{
 .text-input input:focus{
     padding: 1rem 0 1rem 0;
     transition: all 0.25s linear;
-    box-shadow: -0.1rem 0.1rem 1rem 0.25rem rgba(194, 250, 247, 0.25)
-    
-}
-
-.text-input input:focus{
+    box-shadow: -0.1rem 0.1rem 1rem 0.25rem rgba(194, 250, 247, 0.25);
     outline: none;
+    
 }
 
 .text-input .timer {
@@ -263,4 +260,101 @@ a{
 
 #OSLeft img{
     max-width: 2rem;
+}
+
+
+@media only screen and (max-width: 880px){
+
+    .text{
+        min-width: fit-content;
+        font-size: 1rem;
+        padding: 1rem 0.5rem 1rem 0.5rem;
+        height: fit-content;
+    }
+
+    .text p{
+        width: fit-content;
+    }
+
+    .count{
+        font-size: 1rem;
+    }
+
+    #firstWord{
+        margin-right: 1rem;
+        margin-left: 3rem;
+    }
+
+
+    .text-input{
+        max-width: 80%;
+        padding: 0.25rem 0 0.25rem 0;
+        margin: 0 2rem 3rem 2rem;
+    }
+
+    .text-input input:focus{
+        padding: 0.75rem 0 0.75rem 0;
+        
+    }
+    
+
+    .text-input input{
+        width: 10rem;
+    }
+
+    .text-input .restart-input img{
+        max-width: 2rem;
+    }
+
+    .text-input .restart-input img:hover{
+        max-width: 2.5rem;
+    }
+    
+
+    .text-input .timer{
+        font-size: 1rem;
+        margin-right: 0;
+    }
+
+    .keyboard{
+        max-width: 95vw;
+    }
+
+    .key{
+        margin: 0.1rem;
+        padding: 0.5rem;
+        font-size: 0.35rem;
+        text-align: center;
+        border-radius: 0.25rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center
+
+    }
+
+    .special{
+        width: 100%;
+        margin: 0.25rem;
+        padding: 0.25rem 0.5rem 0.25rem 0.5rem;
+        font-size: 0.35rem;
+    }
+
+    #CapsLock{
+        padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    }
+    
+    #Space{
+        padding: 0.5rem 4rem 0.5rem 4rem;
+    }
+    
+    
+    #Enter{
+        padding: 0.5rem 1rem 0.5rem  1rem;
+
+    }
+
+    #OSLeft img{
+        max-width: 0.5rem;
+    }
 }
