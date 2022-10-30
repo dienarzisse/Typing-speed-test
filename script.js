@@ -130,10 +130,10 @@ $(document).ready(function(event) {
 
     function spacePressed(e){
         var text = $("#text-input").val();
-        console.log(text);
         if(text[text.length - 1] === ' ' ){
             if($("#firstWord").text())
             {
+                countdown(60);
                 nextWord();
                 document.getElementById('text-input').value = ''
                 inputTextMatchingOnKeyDown(e);
@@ -152,8 +152,9 @@ $(document).ready(function(event) {
     initiateWords();
     // events on keydown
     $("#text-input").keydown((e) => {
+        var text = $("#text-input").val();
         keyboardAnimation(e);
-        if (((e.key).match(/[a-z]/i) && (e.key).length === 1) || e.code === 'Space') 
+        if (((e.key).match(/[a-z]/i) && (e.key).length === 1) || e.code === 'Space' || text[text.length - 1] === ' ') 
             countdown(60);
     });
 
