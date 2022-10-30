@@ -105,7 +105,6 @@ $(document).ready(function(event) {
         
         if(textInput.length > firstWord.length)
             {
-
                 if(e.code !== "Space" && !textInput[textInput - 1] === ' ')
                     $("#firstWord").html(`<span class="notMatching">${firstWord}</span>`);
                 else
@@ -126,10 +125,10 @@ $(document).ready(function(event) {
 
 
     function spacePressed(e){
-        if(e.code === "Space" ){
-            var text = $("#text-input").text();
-            console.log(text);
-            if($("#firstWord").text() || text[text.length - 1] === ' ')
+        var text = $("#text-input").text();
+        console.log(text);
+        if(e.code === "Space" || text[text.length - 1] === ' ' ){
+            if($("#firstWord").text())
             {
                 nextWord();
                 document.getElementById('text-input').value = ''
