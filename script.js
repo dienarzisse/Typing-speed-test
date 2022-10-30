@@ -24,8 +24,12 @@ $(document).ready(function(event) {
 , "Well, I must endure the presence of a few caterpillars if I wish to become acquainted with the butterflies."
 ];
     let sentence = sentences[Math.floor(Math.random()*sentences.length)] ;
-    rotation = 0;
+    let rotation = 0;
+    let nrWords = 5;
 
+    if(window.screen.width <= 880) {
+        nrWords = 3;
+    }
 
 
     // keyboard
@@ -74,11 +78,11 @@ $(document).ready(function(event) {
     }
 
     function initiateWords(){
-        $("#next-words").html(`${sentence.split(" ").splice(0, 5).join(" ")}`);
+        $("#next-words").html(`${sentence.split(" ").splice(0, nrWords).join(" ")}`);
         $("#firstWord").html(`${$("#next-words").text().split(" ")[0]}`);
         $("#next-words").html(`${$("#next-words").text().split(" ").slice(1).join(" ") + " " + 
-        sentence.split(" ")[5]}`);
-        sentence = sentence.split(" ").slice(6).join(' ');
+        sentence.split(" ")[nrWords]}`);
+        sentence = sentence.split(" ").slice(nrWords + 1).join(' ');
     }
 
     function nextWord(){
