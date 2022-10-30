@@ -102,10 +102,6 @@ $(document).ready(function(event) {
         textInput = $("#text-input").val();
         firstWord = $("#firstWord").text();
 
-        if((e.key).length === 1)
-            textInput += e.key;
-        if(e.key === "Backspace")
-            textInput = textInput.slice(0, -1);
         
         if(textInput.length > firstWord.length)
             {
@@ -148,7 +144,6 @@ $(document).ready(function(event) {
     initiateWords();
     // events on keydown
     $("#text-input").keydown((e) => {
-        inputTextMatchingOnKeyDown(e);
         keyboardAnimation(e);
         countdown(60);
     });
