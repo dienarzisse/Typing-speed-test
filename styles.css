@@ -111,8 +111,8 @@ main{
     text-align: center;
     font-family: "Roboto", sans-serif;
     font-size: 1.5rem;
-    background-color: #98D9D5;
-    color: var(--very-dark-blue);
+    background-color: rgb(33, 67, 99);
+    color: var(--very-light-blue);
     transition: all 0.25s linear;
     box-shadow: -0.1rem 0.1rem 1rem 0.25rem rgba(5, 5, 5, 0.15);
 }
@@ -171,7 +171,7 @@ main{
 /* Styling the keyboard */
 .keyboard{
     box-shadow: -0.1rem 0.1rem 1rem 0.5rem rgba(194, 250, 247, 0.25);
-    background-color: rgba(194, 250, 247, 0.75);
+    background-color: rgba(22, 45, 66, 1);
     border-radius: 1rem;
     padding: 0.5rem;
 }
