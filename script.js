@@ -142,8 +142,7 @@ $(document).ready(function(event) {
 
     function clearCTRLDEL(e){
         if ( e.ctrlKey && ( e.which === 8 ) ) 
-            $("#firstWord").html(`${$("#firstWord").text()}`);
-          
+            $("#firstWord").html(`${$("#firstWord").text()}`);   
     }
 
     initiateWords();
@@ -174,6 +173,7 @@ $(document).ready(function(event) {
     $("#text-input").keyup((e) => {
     var eventName = e.code.toString();
     clearCTRLDEL(e);
+    inputTextMatchingOnKeyDown(e);
     setTimeout(() => {$(`#${eventName}`).removeClass("keyPressed");}, 100);
     spacePressed(e);
     });
