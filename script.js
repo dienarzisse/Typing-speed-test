@@ -125,9 +125,9 @@ $(document).ready(function(event) {
 
 
     function spacePressed(e){
-        var text = $("#text-input").text();
+        var text = $("#text-input").val();
         console.log(text);
-        if(e.code === "Space" || text[text.length - 1] === ' ' ){
+        if(text[text.length - 1] === ' ' ){
             if($("#firstWord").text())
             {
                 nextWord();
