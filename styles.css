@@ -142,8 +142,18 @@ main{
     transform-origin: center;
     height: fit-content;
     padding: 0;
+    display:flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
 }
 
+.text-input .restart-input p{
+    font-weight: bold;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    color: var(--very-light-blue);
+}
 
 .text-input .restart-input img{
     max-width: 3rem;
